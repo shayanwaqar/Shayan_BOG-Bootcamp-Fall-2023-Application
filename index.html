@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.O.G - Fall 2023 Bootcamp take-home assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://bitsofgood.org/favicon.png" rel="icon" type="image/png">
+</head>
+
+<body>
+    <div class="card">
+        <div class="picturebg">
+            <img id="dp" src="Shayan_picture.jpg">
+        </div>
+
+        <br>
+        
+        <div id="text">
+            <p>Shayan is a sophomore Computer Science major who wants to join the 
+            Bits of Good developer Bootcamp. He has experience in Backend using Flask 
+            but is looking to expand his skills with other technologies such as 
+            JavaScript and React. Shayan is pasionate about the accessibility 
+            of quality education for students of all backgrounds across the 
+            world. Currently, Shayan is a TA for CS1301 and he loves 
+            teaching recitation and helping his students debug during office hours. 
+            In his free time, he likes 
+            to watch comedy movies, play table tennis, and hang out with friends! 
+            Feel free to email him 
+            at <a href="mailto:mwaqar9@gatech.edu">mwaqar9@gatech.edu</a>!</p>
+        </div>
+
+        <button id="toggleButton">Click for Shayan's Description</button>
+        
+    </div>
+    <script>
+        const textDiv = document.getElementById("text");
+        const toggleButton = document.getElementById("toggleButton");
+
+        toggleButton.addEventListener("click", () => {
+            textDiv.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
